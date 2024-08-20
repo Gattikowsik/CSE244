@@ -1,0 +1,104 @@
+// fun main() 
+// {
+// //     var a = 40
+// //     println(a)
+// //     val b = 80
+// //     b = 70
+// //     print(b)
+    
+// //     var a = 40
+// //     var b : String = "Hello"
+// //     println(a)
+// //     print(b)
+    
+//     val kotlin = "hello"
+//     println(kotlin)
+   
+// }
+// //  println(kotlin)
+
+---------------------------------------------
+// class person
+// {
+//     var kotlin = "hello"
+//     fun displayinfo()
+//     {
+//         println(kotlin)
+//     }
+// }
+
+// fun main()
+// {
+//     val person = person()
+//     person.displayinfo()
+// }
+---------------------------------------------
+// fun main(){
+//     val a = 10
+//     val b = 20
+//     val result = "sum of $a and $b is ${a + b}"
+//     println(result)
+// }
+---------------------------------------------
+// fun main(){
+//     val letter: Char
+// 	letter = 'A'
+//     print("$letter")
+//     print('\n')
+//     println('\$')
+//     print('\\')
+// }
+------------------------------------------
+// fun main(){
+//     val name: String
+//     name = 
+//    """kowsik
+// kowsik
+// kowsik
+// kowsik
+// kowsik"""
+//     print("$name")
+// }
+----------------------------------------
+// fun main(){
+//     val name: String
+//     name = 
+//    		"""kowsik
+//     kowsik
+//         kowsik
+//             kowsik
+//                 kowsik"""
+//     print("$name")
+// }
+---------------------------------------
+fun main(){
+    val name: String
+    name = 
+   	"""	kowsik
+kowsik		kowsik
+	kowsik"""
+    print("$name")
+}
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
