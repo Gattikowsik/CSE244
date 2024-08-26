@@ -131,7 +131,7 @@ fun main(){
     println("Safe Cast Result: $c")
 }
 -----------------------------------------
-DAY - 4
+DAY - 4 (22 Aug 2024)
 -----------------------------------------
 OPERATORS:-
 
@@ -188,6 +188,164 @@ OPERATORS:-
     println(" !$a: ${!a}");
      
  }
+
+------------------------------------
+//DAY - 5  (26 aug 2024)
+-----------------------------------
+
+//simple if statement
+// fun main()
+// {
+//     var temp = 25
+//     if (temp > 20)
+//     {
+//         println("it is a warm day")
+//     }
+// }
+
+
+
+//if-else statement
+//  fun main()
+// {
+//     var temp = 19
+//     if (temp > 20)
+//     {
+//         println("it is a warm day")
+//     }
+//     else
+//     println("good weather")
+// }
+
+// fun main()
+// {
+//     var marks = 85
+//     if(marks >=90)
+//     {
+//         println("A")
+//     }
+//     else if (marks >=85 && marks <90){
+//         println("B")
+//     }
+//     else if (marks>=70 && marks <85)
+//     {
+//         println("D")
+//     }
+// 	else {
+//         println("D")
+//     }
+// }
+
+
+// fun main(){
+//     var sign='*'
+//         var a=8;
+//         var b=5;
+//         if(sign=='+'){
+//             println("${a+b}")
+//         }
+//        else if(sign=='*'){
+//             println("${a*b}")
+//         }
+//        else if(sign=='-'){
+//             println("${a-b}")
+//         }
+//        else if(sign=='/'){
+//             println("${a/b}")
+//         }
+//        else if(sign=='%'){
+//             println("${a%b}")
+//         }
+//        else{
+//            println("error")
+//        }
+// }
+
+// fun main ()
+// {
+//     var sign='/'
+//     var a=100;
+//     var b=0;
+//     if(sign=='+'){
+//         println("${a+b}")
+//     }
+//    else if(sign=='*'){
+//         println("${a*b}")
+//     }
+//    else if(sign=='-'){
+//         println("${a-b}")
+//     }
+//    else if(sign=='/'){
+//        	if(b==0)println("b should not be zero")
+//         else
+//         println("${a/b}")
+//     }
+//    else if(sign=='%'){
+//         println("${a%b}")
+//     }
+//    else{
+//        println("error")
+//    }
+// }
+
+//age classification
+fun main()
+{
+  var age=13;
+     if(age<13){
+        println("child")
+    }
+   else if(age<19 && age>=13){
+        println("teenage")
+    }
+   else{
+       println("adult")
+   }
+   
+   age=13;
+     if(age<13){
+        println("child")
+    }
+   else if(age in 13..19){
+        println("teenage")
+    }
+   else if(age in 20..64){
+        println("adult")
+    }
+   else{
+       println("senior")
+   }
+}
+
+//when package
+fun main()
+{
+   val dayofweek = 3
+    val dayname = when(dayofweek)
+    {
+        1-> "monday"
+        2-> "tuesday"
+        3-> "wednesday"
+        4-> "thusday"
+        5-> "friday"
+        6-> "saturday"
+        7-> "sunday"
+        else -> "invalid day"
+    }
+    println("Day name: $dayname")
+}
+
+//when as a statement
+fun main()
+{
+    val num = 8
+    when{
+         num % 2 == 0 ->println("$num is even")
+         num % 2 != 0 ->println("$num is odd")
+         else -> println("unexpected number")
+         
+    }
+}
 
 
 
