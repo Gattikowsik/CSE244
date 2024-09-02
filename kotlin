@@ -417,7 +417,7 @@ fun main(args: Array<String>)
     demo()
 }
 ------------------------------------------------
-DAY - 7 (AUG 29 2024)
+DAY - 7 (AUG 28 2024)
 ------------------------------------------------
 fun factorial(a:Long):Long{
     return if(a<=1)1 else a*factorial(a-1)
@@ -519,6 +519,87 @@ fun main(args:Array<String>)
         i++
     }while (i<=5)
 
+}
+//------------------------------------
+// DAY - 8 (2 SEP 2024)
+//------------------------------------
+// class Person {                       //secondary constructor
+//     var name: String
+//     var age: Int
+
+//     constructor(x: String, y: Int) {
+//         this.name = x;
+//         this.age = y;
+//     }
+
+//     constructor(x: String) {
+//         this.name = x;
+//         this.age = 0;
+//     }
+
+//     constructor() {
+//         this.name = "Rahul";
+//         this.age = 24;
+//     }
+
+//     fun intro() {
+//         println("name is $name and age is $age");
+//     }
+// }
+// fun main(){
+//     var a=Person("Riya",32)
+//     a.intro()
+//     var b=Person()
+//     b.intro()
+//     var c=Person("Hema")
+//     c.intro()
+// }
+
+
+// class Person2(var name:String,var age:Int) {            //primary constructor
+
+//     constructor(x: String):this() {
+//         this.name = x;
+//         this.age = 0;
+//     }
+//     constructor():this("Rahul",30)
+//     fun intro() {
+//         println("name is $name and age is $age");
+//     }
+// }
+// fun main(){
+//     var a=Person2("Riya",32)
+//     a.intro()
+//     var b=Person2()
+//     b.intro()
+//     var c=Person2("Hema")
+//     c.intro()
+// }
+
+
+
+open class rectangle(val a: Double, val b: Double){
+}
+
+open class Rectangle(val a:Double,val b:Double){
+    fun area():Double{
+        return a*b;
+    }
+    open fun display() {
+        println("rectangle with sides $a and $b is ${area()}")
+    }
+}
+open class Square(side :Double):Rectangle(side,side){
+    override fun display() {
+        println("square with sides $a is ${area()}")
+    }
+}
+
+fun main(){
+    val rec=Rectangle(2.0,4.0);
+    rec.display()
+    val sq=Square(3.0);
+    sq.display()
 }
 
 
