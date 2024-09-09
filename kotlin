@@ -601,8 +601,65 @@ fun main(){
     val sq=Square(3.0);
     sq.display()
 }
+-----------------------------------------------------
+5 Sep 2024
+-----------------------------------------------------
+//design a store program for a store to determine eligibility for a special offer based on the total amt and membership status
+fun checkDiscount(totalBill:Int,member:Boolean){
+    if(member) {
+        if (totalBill>=1000){
+            println("You have 20% discount");
+        }
+        else{
+            println("You have 10% discount");
+        }
+    }
+    else{
+        println("No discount");
+    }
+}
+fun main(){
+    var member=true;
+    var totalBill= readln().toIntOrNull();
+    if(totalBill!=null){
+        checkDiscount(totalBill,member);
+    }
+    else{
+        println("Enter the correct inputs");
+    }
+}
 
+//banking system 
+class Account{
+    var balance:Int
+    constructor(bal:Int){
+        balance=bal;
+    }
+    fun withdraw(amount:Int){
+        if(amount>balance){
+            println("Insufficient balance");
+        }
+        else{
+            balance-=amount;
+            println("balance ${balance}")
+        }
+    }
+}
 
+fun main(){
+    var p1=Account(100000);
+    println("do you want to withdraw amt")
+    var flag: String = readln();
+    while (flag=="yes"){
+        println("enter the amt you want to withdraw")
+        var amount= readln().toIntOrNull();
+        if (amount != null) {
+            p1.withdraw(amount)
+        }
+        println("do you want to withdraw again")
+        var flag= readln().toIntOrNull();
+    }
+}
 
 
 
